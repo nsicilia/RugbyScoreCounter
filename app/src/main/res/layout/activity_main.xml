@@ -38,28 +38,40 @@
                 android:textSize="56sp" />
 
             <Button
+                android:id="@+id/HomeTry"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:text="+3 Points" />
+                android:text="Try +5" />
 
             <Button
+                android:id="@+id/HomeConversion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:text="+2 Points" />
+                android:text="Conversion +2" />
 
             <Button
+                android:id="@+id/HomeDropGoal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:text="Free throw" />
+                android:text="Drop Goal +3" />
+
+            <Button
+                android:id="@+id/HomePenalty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:text="Penalty +3" />
         </LinearLayout>
 
         <View
@@ -96,37 +108,60 @@
                 android:textSize="56sp" />
 
             <Button
+                android:id="@+id/AwayTry"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:text="+3 Points" />
+                android:text="Try +5" />
 
             <Button
+                android:id="@+id/AwayConversion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:layout_marginLeft="22dp"
-                android:layout_marginRight="22dp"
-                android:text="+2 Points" />
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:text="Conversion +2" />
 
             <Button
+                android:id="@+id/AwayDropGoal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:layout_marginLeft="22dp"
-                android:layout_marginRight="22dp"
-                android:text="Free throw" />
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:text="Drop Goal +3" />
+
+            <Button
+                android:id="@+id/AwayPenalty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:text="Penalty +3" />
         </LinearLayout>
     </LinearLayout>
 
     <Button
+        android:id="@+id/AwayReset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="48dp"
         android:layout_marginBottom="32dp"
-        android:text="Reset" />
+        android:text="Away Reset" />
+
+    <Button
+        android:id="@+id/HomeReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="48dp"
+        android:layout_marginBottom="32dp"
+        android:text="Home Reset" />
 
 </RelativeLayout>
