@@ -15,23 +15,69 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
+
+
+    @Override
+    protected void onResume() {
+        super.onResume();
         ScoreForHomeTeam();
     }
 
     public void ScoreForHomeTeam(){
 
         /**
-         * This is the button for the Home Try
+         * This is the button for the Home Try adding 5 to the score
+         * and updating score display
          */
         Button HomeTry = findViewById(R.id.HomeTry);
         HomeTry.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 HomeScore += 5;
-
                 DisplayHomeScore(HomeScore);
             }
         });
+
+        /**
+         * The button for Home Conversion adding 2 to the score
+         * and updating score display
+         */
+        Button HomeConversion = findViewById(R.id.HomeConversion);
+        HomeConversion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                HomeScore += 2;
+                DisplayHomeScore(HomeScore);
+            }
+        });
+
+        /**
+         * The button for Home Drop Goal adding 3 to the score
+         * and updating score display
+         */
+        Button HomeDropGoal = findViewById(R.id.HomeDropGoal);
+        HomeDropGoal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                HomeScore += 3;
+                DisplayHomeScore(HomeScore);
+            }
+        });
+
+        /**
+         * The button for Home Drop Goal adding 3 to the score
+         * and updating score display
+         */
+        Button HomePenalty = findViewById(R.id.HomePenalty);
+        HomePenalty.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                HomeScore += 3;
+                DisplayHomeScore(HomeScore);
+            }
+        });
+
 
     }
 
